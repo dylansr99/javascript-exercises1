@@ -1,5 +1,5 @@
-const removeFromArray = function(array, value) {
-         let filteredArray = array.filter((arr) => arr != value)
+const removeFromArray = function() {
+         let filteredArray = arguments[0].filter((arr) => arr != [arguments[1]])
          return filteredArray
      };                 
 
