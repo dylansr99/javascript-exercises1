@@ -8,7 +8,11 @@ const sumAll = function(firstValue, lastValue) {
 
        }
 
+    const initialValue = 0;
     
+      const sumOfArray = sumArray.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue)
+
+        return sumOfArray
 
 };
 
@@ -16,10 +20,3 @@ sumAll(1, 4)
 
 // Do not edit below this line
 module.exports = sumAll;
-
-
-// const initialValue = 0;
-    
-   //   const sumOfArray = sumArray.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue)
-
-     //   return sumOfArray
