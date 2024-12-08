@@ -1,5 +1,5 @@
 const sumAll = function(firstValue, lastValue) {
-// loops from firstValue to lastValue, pushing each increment in to sumArray
+// loops from lastValue to firstValue, pushing each increment in to sumArray
 
 let sumArray = [];
     
@@ -7,6 +7,8 @@ if (firstValue > lastValue) {
   for (i = lastValue; i <= firstValue; i++) {
     sumArray.push(i)
   } }
+
+// loops from firstValue to lastValue, pushing each increment in to sumArray   
 
   else if (firstValue < lastValue) {
   for (i = firstValue; i <= lastValue; i++) {    
