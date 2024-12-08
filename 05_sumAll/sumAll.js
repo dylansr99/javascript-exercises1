@@ -1,4 +1,11 @@
 const sumAll = function(firstValue, lastValue) {
+
+if (firstValue < 0) {return 'ERROR'}
+else if (lastValue < 0) {return 'ERROR'}
+
+if (isNaN(firstValue)) {return 'ERROR'}
+else if (isNaN(lastValue)) {return 'ERROR'}
+
 // loops from lastValue to firstValue, pushing each increment in to sumArray
 
 let sumArray = [];
@@ -28,6 +35,7 @@ if (firstValue > lastValue) {
 sumAll(1, 4)
 sumAll(1, 4000)
 sumAll(123, 1)
+sumAll(-10, 4)
 
 // Do not edit below this line
 module.exports = sumAll;
