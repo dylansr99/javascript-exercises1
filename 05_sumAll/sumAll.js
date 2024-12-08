@@ -1,5 +1,8 @@
 const sumAll = function(firstValue, lastValue) {
 
+if (Number.isInteger(firstValue) == false) {return 'ERROR'}  
+else if (Number.isInteger(lastValue) == false) {return 'ERROR'}
+
 if (firstValue < 0) {return 'ERROR'}
 else if (lastValue < 0) {return 'ERROR'}
 
@@ -36,6 +39,7 @@ sumAll(1, 4)
 sumAll(1, 4000)
 sumAll(123, 1)
 sumAll(-10, 4)
+sumAll(2.5, 4)
 
 // Do not edit below this line
 module.exports = sumAll;
